@@ -1,6 +1,11 @@
 from django.contrib import admin
-from .models import Department, Employee, Task
+from .models import *
 
+admin.site.register(Company)
 admin.site.register(Department)
-admin.site.register(Employee)
-admin.site.register(Task)
+admin.site.register(ChickenBatch)
+admin.site.register(FishPond)
+admin.site.register(PigPen)
+admin.site.register(ConstructionProject)
+admin.site.register(Vehicle)
+admin.site.register(Trip)
