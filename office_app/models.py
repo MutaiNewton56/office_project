@@ -7,6 +7,14 @@ class Company(models.Model):
     def __str__(self):
         return self.name
 
+# class Department(models.Model):
+#     name = models.CharField(max_length=100)
+
+# class ChickenBatch(models.Model):
+#     department = models.ForeignKey(Department, on_delete=models.CASCADE)
+#     quantity = models.PositiveIntegerField()
+#     added_on = models.DateTimeField(auto_now_add=True)
+
 
 class Department(models.Model):
     name = models.CharField(max_length=100)
